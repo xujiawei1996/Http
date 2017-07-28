@@ -67,7 +67,7 @@ if [ $# -eq 0 ];then
 fi
 
 if [ -z $LD_LIBRARY_PATH ];then
-	export $LIB
+	export LD_LIBRARY_PATH=$LIB
 fi
 
 case $1 in
